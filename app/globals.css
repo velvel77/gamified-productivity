@@ -51,6 +51,10 @@ body {
   display: flex;
 }
 
+site-header__link {
+  list-style: none;
+}
+
 .site-header {
   justify-content: space-between;
 }

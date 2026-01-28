@@ -25,30 +25,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <header className="site-header">
-        <div className="site-header__wrapper">
-          <span>Img</span>
-          <span>Logo</span>
-        </div>
-
-        <section className="site-header__menu">
-          <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/favorites">Favorites</Link>
-        </section>
-
-        <section className="site-header__login">
-          <span>Button</span>
-        </section>
-      </header>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
-      <footer className="site-footer">
-
-      </footer>
     </html>
   );
 }
