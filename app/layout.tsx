@@ -34,6 +34,7 @@ export default function RootLayout({
         <section className="site-header__menu">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
+          <Link href="/favorites">Favorites</Link>
         </section>
 
         <section className="site-header__login">
