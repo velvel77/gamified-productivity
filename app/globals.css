@@ -1,9 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #eb9ed5;
   --foreground: #171717;
+  --default-spacing: 2em;
   --default-padding: 2rem;
+  --button-padding: 0.5rem;
   --header-font-color: hsla(0, 0%, 0%, 1);
 }
 
@@ -23,21 +25,46 @@
 
 /* --- Colors --- */
 
-.site-header {
+.site-header,
+.site-main__button {
   background-color: var(--background);
 }
 
-.site-header {
+.site-header,
+.site-main__button {
   color: var(--header-font-color);
 }
 
-/* --- Padding --- */
+/* --- Font --- */
+
+
+/* --- Margin and Padding --- */
+
+.site-main__text,
+.site-main__heading {
+  margin: var(--default-spacing);
+}
 
 .site-header {
   padding: var(--default-padding);
 }
 
+.site-main__button {
+  padding: var(--button-padding);
+}
+
 /* --- Individual Styling --- */
+
+/* - Grid - */
+
+.main-body-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+
+/* - Main - */
 
 body {
   background: var(--foreground);
@@ -65,4 +92,8 @@ site-header__link {
 
 .site-header__menu {
   gap: 2em;
+}
+
+.site-main__button {
+  border-radius: 10px;
 }

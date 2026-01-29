@@ -1,0 +1,18 @@
+[
+    {
+        "type": "Slime",
+        "base-HP": "1"
+    },
+    {
+        "type": "Skeleton",
+        "base-HP": "2"
+    },
+    {
+        "type": "Llama",
+        "base-HP": "5"
+    },
+    {
+        "type": "Kaiju",
+        "base-hp": "20"
+    }
+]
