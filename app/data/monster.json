@@ -1,17 +1,21 @@
 [
     {
+        "id": 1,
         "type": "Slime",
         "base-HP": "1"
     },
     {
+        "id": 2,
         "type": "Skeleton",
         "base-HP": "2"
     },
     {
+        "id": 3,
         "type": "Llama",
         "base-HP": "5"
     },
     {
+        "id": 4,
         "type": "Kaiju",
         "base-hp": "20"
     }
