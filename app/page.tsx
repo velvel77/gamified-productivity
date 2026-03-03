@@ -1,4 +1,4 @@
-import Header  from "../components/header";
+import Header from "../components/header";
 import MainBodyGrid from "../components/ui/main-body-grid";
 import Link from "next/link";
 

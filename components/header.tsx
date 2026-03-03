@@ -1,8 +1,6 @@
 import Link from "next/link";
 import menu from "../app/data/menu.json";
 
-
-
 export default function Header() {
     return (
         <header className="site-header">
