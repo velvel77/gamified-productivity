@@ -2,6 +2,7 @@ import Header from "../components/header";
 import MainBodyGrid from "../components/ui/main-body-grid";
 import Link from "next/link";
 import prisma from "@/lib/db";
+import { addTask } from "@/actions/actions";
 
 
 
@@ -15,17 +16,23 @@ export default async function Home() {
         <Header />
       </header>
 
-      <main className="site-main">
+      <main className="">
         <MainBodyGrid>
-          <span className="site-main__text">Tired of being underleveled?</span>
+          <span className="">Tired of being underleveled?</span>
 
-          <h1 className="site-main__heading">Level up now!</h1>
+          <h1 className="">Level up now!</h1>
 
-          <p>Test: {JSON.stringify(tasks)}</p>
+          {/* <p>Test: {JSON.stringify(tasks)}</p> */}
 
-          <Link href="/monster" className="site-main__button">
-            <span className="site-main__text">Find monster</span>
-          </Link>
+          <form action={addTask} className="space-x-2 h-4">
+            <input 
+            type="text" 
+            name="title" 
+            className="px-3 py-1 rounded" />
+            <button type="submit" className="bg-(--background) px-3 py-1 text-black rounded-lg">
+              Add task
+            </button>
+          </form>
 
         </MainBodyGrid>
       </main>
