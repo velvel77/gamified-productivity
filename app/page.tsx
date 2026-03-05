@@ -16,7 +16,7 @@ export default async function Home() {
         <Header />
       </header>
 
-      <main className="">
+      <main className="flex justify-center">
         <MainBodyGrid>
           <span className="">Tired of being underleveled?</span>
 
@@ -28,11 +28,17 @@ export default async function Home() {
             <input 
             type="text" 
             name="title" 
-            className="px-3 py-1 rounded" />
-            <button type="submit" className="bg-(--background) px-3 py-1 text-black rounded-lg">
+            className="bg-white px-3 py-1 rounded" />
+            <button type="submit" className="bg-background px-3 py-1 text-black rounded-lg">
               Add task
             </button>
           </form>
+
+          <ul className="mt-6">
+            {tasks.map((task) => 
+              <li key={task.id}>{task.title}</li>
+            )}
+          </ul>
 
         </MainBodyGrid>
       </main>
