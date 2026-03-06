@@ -18,9 +18,9 @@ export default async function Home() {
 
       <main className="flex justify-center">
         <MainBodyGrid>
-          <span className="">Tired of being underleveled?</span>
+          <span className="italic">Tired of being underleveled?</span>
 
-          <h1 className="">Level up now!</h1>
+          <h1 className="font-bold text-xl">Level up now!</h1>
 
           {/* <p>Test: {JSON.stringify(tasks)}</p> */}
 
