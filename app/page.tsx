@@ -2,7 +2,8 @@ import Header from "../components/header";
 import MainBodyGrid from "../components/ui/main-body-grid";
 import Link from "next/link";
 import prisma from "@/lib/db";
-import { addTask } from "@/actions/actions";
+import { addTask, deleteTask } from "@/actions/actions";
+import { Trash2 } from "lucide-react";
 
 
 
@@ -36,7 +37,19 @@ export default async function Home() {
 
           <ul className="mt-6">
             {tasks.map((task) => 
-              <li key={task.id}>{task.title}</li>
+              <li className="flex justify-between items-center gap-5" key={task.id}>
+                {task.title}
+                <form action={deleteTask}>
+                <input 
+                type="hidden"
+                name="id"
+                value={task.id}
+                />
+                <button className="hover:bg-pink-700 rounded-xl cursor-pointer p-1.5" type="submit">
+                  <Trash2 />
+                </button> 
+                </form>
+              </li>
             )}
           </ul>
 
