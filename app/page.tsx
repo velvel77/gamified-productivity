@@ -1,9 +1,8 @@
 import Header from "../components/header";
 import MainBodyGrid from "../components/ui/main-body-grid";
-import Link from "next/link";
 import prisma from "@/lib/db";
-import { addTask, deleteTask } from "@/actions/actions";
-import { Trash2 } from "lucide-react";
+import AddTaskForm from "@/components/tasks/add-task-form";
+import TodoGrid from "@/components/ui/todo-list-grid";
 
 
 
@@ -19,39 +18,15 @@ export default async function Home() {
 
       <main className="flex justify-center">
         <MainBodyGrid>
-          <span className="">Tired of being underleveled?</span>
+          <span className="italic">Tired of being underleveled?</span>
 
-          <h1 className="">Level up now!</h1>
+          <h1 className="font-bold text-xl">Level up now!</h1>
 
           {/* <p>Test: {JSON.stringify(tasks)}</p> */}
 
-          <form action={addTask} className="space-x-2 h-4">
-            <input 
-            type="text" 
-            name="title" 
-            className="bg-white px-3 py-1 rounded" />
-            <button type="submit" className="bg-background px-3 py-1 text-black rounded-lg">
-              Add task
-            </button>
-          </form>
-
-          <ul className="mt-6">
-            {tasks.map((task) => 
-              <li className="flex justify-between items-center gap-5" key={task.id}>
-                {task.title}
-                <form action={deleteTask}>
-                <input 
-                type="hidden"
-                name="id"
-                value={task.id}
-                />
-                <button className="hover:bg-pink-700 rounded-xl cursor-pointer p-1.5" type="submit">
-                  <Trash2 />
-                </button> 
-                </form>
-              </li>
-            )}
-          </ul>
+          <AddTaskForm />
+          
+          <TodoGrid tasks={tasks} />
 
         </MainBodyGrid>
       </main>

@@ -3,8 +3,8 @@
 :root {
   --background: #eb9ed5;
   --foreground: #171717;
-  --default-spacing: 2em;
-  --default-padding: 2rem;
+  --default-spacing: 1em;
+  --default-padding: 1rem;
   --button-padding: 0.5rem;
   --header-font-color: hsla(0, 0%, 0%, 1);
 }
