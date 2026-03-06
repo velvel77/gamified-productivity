@@ -1,9 +1,8 @@
 import Header from "../components/header";
 import MainBodyGrid from "../components/ui/main-body-grid";
-import Link from "next/link";
 import prisma from "@/lib/db";
-import { addTask } from "@/actions/actions";
-
+import AddTaskForm from "@/components/tasks/add-task-form";
+import TodoGrid from "@/components/ui/todo-list-grid";
 
 
 
@@ -25,13 +24,9 @@ export default async function Home() {
 
           {/* <p>Test: {JSON.stringify(tasks)}</p> */}
 
-
-
-          <ul className="mt-6">
-            {tasks.map((task) => 
-
-            )}
-          </ul>
+          <AddTaskForm />
+          
+          <TodoGrid />
 
         </MainBodyGrid>
       </main>
