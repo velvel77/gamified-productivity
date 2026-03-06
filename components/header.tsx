@@ -3,22 +3,21 @@ import menu from "../app/data/menu.json";
 
 export default function Header() {
     return (
-        <header className="site-header">
+        <header className="site-header items-center">
             <div className="site-header__wrapper">
-                <span>Img</span>
-                <span>Logo</span>
+                <span className="wrap-break-word">Kill the Task!</span>
             </div>
 
 
-            <ul className = "site-header__menu">
+            {/* <ul className = "site-header__menu">
                 {
                     menu.map((item, index) => <li key={index}><Link className="site-header__link" href={item.href}>{item.title}</Link></li>)
                 }
-            </ul>
+            </ul> */}
 
 
-            <section className="site-header__login">
-                <span>Button</span>
+            <section className="bg-white p-3 rounded-xl">
+                <span>Login</span>
             </section>
       </header>
     )
