@@ -7,8 +7,9 @@ type TodoTasksProps = {
 
 export default function TodoGrid({ tasks }: TodoTasksProps) {
     return(
-        <div>
-            <ul className="mt-6">
+        //TODO: implement auto-columns
+        <div className="grid m-w-full justify-items-center">
+            <ul className="max-w-2/3 flex flex-col mt-6 p-3 space-y-2 bg-white border rounded-xl">
                 {tasks.map((task) => (
                     <TodoTaskRow key={task.id} task={task} />
                 ))}
