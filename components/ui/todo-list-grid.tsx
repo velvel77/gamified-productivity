@@ -1,11 +1,11 @@
 import type { ReactNode } from "react";
 import { Task } from "@/types/task"
 
-type TodoListProps = {
+type TodoTasksProps = {
     tasks: Task[];
 }
 
-export default function TodoGrid(props) {
+export default function TodoGrid({ tasks }: TodoTasksProps) {
     return(
 
     );
