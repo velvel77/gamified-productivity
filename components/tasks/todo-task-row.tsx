@@ -1,4 +1,4 @@
-import { Task } from "@/types/task";
+import type { Task } from "@/types/task";
 import { deleteTask } from "@/actions/actions";
 import { Trash2 } from "lucide-react";
 
