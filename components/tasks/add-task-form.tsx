@@ -1,12 +1,10 @@
-import type { Task } from "@/types/task";
+
 import { addTask } from "@/actions/actions";
 
-type TodoTaskProps = {
-  task: Task;
-};
 
 
-export default function AddTaskForm({ task }: TodoTaskProps) {
+
+export default function AddTaskForm() {
     return(
         <form action={addTask} className="space-x-2 h-4">
             <input 

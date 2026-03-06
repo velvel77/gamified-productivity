@@ -26,7 +26,7 @@ export default async function Home() {
 
           <AddTaskForm />
           
-          <TodoGrid />
+          <TodoGrid tasks={tasks} />
 
         </MainBodyGrid>
       </main>
