@@ -37,7 +37,7 @@ export default async function Home() {
 
           <ul className="mt-6">
             {tasks.map((task) => 
-              <li key={task.id}>
+              <li className="flex justify-between items-center gap-5" key={task.id}>
                 {task.title}
                 <form action={deleteTask}>
                 <input 
@@ -45,7 +45,7 @@ export default async function Home() {
                 name="id"
                 value={task.id}
                 />
-                <button type="submit">
+                <button className="hover:bg-pink-700 rounded-xl cursor-pointer p-1.5" type="submit">
                   <Trash2 />
                 </button> 
                 </form>
