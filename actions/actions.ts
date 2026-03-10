@@ -1,24 +1,24 @@
 "use server";
 
-import prisma from "@/lib/db";
 import { revalidatePath } from "next/cache";
+import prisma from "@/lib/db";
 
 export async function addTask(formData: FormData) {
-    await prisma.task.create({
-        data: {
-            title: formData.get("title") as string,
-        },
-    });
+  await prisma.task.create({
+    data: {
+      title: formData.get("title") as string,
+    },
+  });
 
-    revalidatePath("/");
+  revalidatePath("/");
 }
 
 export async function deleteTask(formData: FormData) {
-    const id= formData.get("id") as string;
-    
-    await prisma.task.delete({
-        where: { id },
-    });
+  const id = formData.get("id") as string;
 
-    revalidatePath("/");
+  await prisma.task.delete({
+    where: { id },
+  });
+
+  revalidatePath("/");
 }
