@@ -22,8 +22,6 @@ export default async function Home() {
 
           <h1 className="font-bold text-xl">Level up now!</h1>
 
-          {/* <p>Test: {JSON.stringify(tasks)}</p> */}
-
           <AddTaskForm />
           
           <TodoGrid tasks={tasks} />

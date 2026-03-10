@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <header className="site-header items-center">
             <div className="site-header__wrapper">
-                <span className="wrap-break-word">Kill the Task!</span>
+                <span className="font-bold text-white wrap-break-word">Kill the Task!</span>
             </div>
 
 
@@ -17,7 +17,7 @@ export default function Header() {
 
 
             <section className="bg-white p-3 rounded-xl">
-                <span>Login</span>
+                <span>Tasks</span>
             </section>
       </header>
     )
