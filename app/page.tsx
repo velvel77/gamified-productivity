@@ -18,7 +18,7 @@ export default async function Home() {
 
       <main className="flex justify-center">
         <MainBodyGrid>
-          <span className="italic">Tired of being underleveled?</span>
+          {/* <span className="italic">Tired of being underleveled?</span> */}
 
           <h1 className="font-bold text-xl">Level up now!</h1>
 
