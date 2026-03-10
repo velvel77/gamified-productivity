@@ -11,23 +11,23 @@ export default async function Home() {
 
   return (
     <>
-      <header>
-        <Header />
-      </header>
+        <header>
+          <Header />
+        </header>
 
-      <main className="flex justify-center">
-        <MainBodyGrid>
-          <h1 className="font-bold text-xl">Level up now!</h1>
+        <main className="flex justify-center">
+          <MainBodyGrid>
+            <h1 className="font-bold text-xl">Level up now!</h1>
 
-          <AddTaskForm />
+            <AddTaskForm />
 
-          <TodoGrid tasks={tasks} />
-        </MainBodyGrid>
-      </main>
+            <TodoGrid tasks={tasks} />
+          </MainBodyGrid>
+        </main>
 
-      <footer className="w-full mt-auto">
-        <MainCharacterWidget character={character} />
-      </footer>
+        <footer className="w-full mt-auto">
+          <MainCharacterWidget character={character} />
+        </footer>
     </>
   );
 }
