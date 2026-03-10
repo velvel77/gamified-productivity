@@ -22,7 +22,7 @@ model Task {
 
 model Character {
   id String @id @default(cuid())
-  title String
+  name String
   level Int @default(1)
   exp Int @default(0)
   health Int @default(3)
