@@ -6,7 +6,7 @@ type MainBodyGridProps = {
 
 export default function MainBodyGrid({children}: MainBodyGridProps ) {
     return (
-        <div className="flex flex-col items-center mt-4 space-y-4">
+        <div className="flex flex-col items-center mt-8 space-y-5">
             {children}
         </div>
     )
