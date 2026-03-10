@@ -17,6 +17,7 @@ export default function TodoTaskRow({ task }: TodoTaskProps) {
         <button
           className="hover:bg-pink-500 rounded-xl cursor-pointer p-1.5"
           type="submit"
+          aria-label="Delete task"
         >
           <Trash2 className="text-pink-500" />
         </button>
