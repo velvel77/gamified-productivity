@@ -1,7 +1,7 @@
 import AddTaskForm from "@/components/tasks/add-task-form";
 import TodoGrid from "@/components/ui/todo-list-grid";
 import prisma from "@/lib/db";
-import Header from "../components/header";
+import Header from "../components/navigation/header";
 import MainBodyGrid from "../components/ui/main-body-grid";
 
 export default async function Home() {
@@ -15,7 +15,6 @@ export default async function Home() {
 
       <main className="flex justify-center">
         <MainBodyGrid>
-          {/* <span className="italic">Tired of being underleveled?</span> */}
 
           <h1 className="font-bold text-xl">Level up now!</h1>
 
