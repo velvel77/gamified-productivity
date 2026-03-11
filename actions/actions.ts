@@ -24,10 +24,10 @@ export async function deleteTask(formData: FormData) {
 }
 
 export async function createCharacter(formData: FormData) {
+  const name = formData.get("name") as string;
+
   await prisma.character.create({
-    data: {
-      name: formData.get("name") as string,
-    },
+    data: { name },
   });
 
   revalidatePath("/");
