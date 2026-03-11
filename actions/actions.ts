@@ -4,10 +4,10 @@ import { revalidatePath } from "next/cache";
 import prisma from "@/lib/db";
 
 export async function addTask(formData: FormData) {
+  const title = formData.get("title") as string;
+  
   await prisma.task.create({
-    data: {
-      title: formData.get("title") as string,
-    },
+    data: { title },
   });
 
   revalidatePath("/");
