@@ -5,7 +5,7 @@ import prisma from "@/lib/db";
 
 export async function addTask(formData: FormData) {
   const title = formData.get("title") as string;
-  
+
   await prisma.task.create({
     data: { title },
   });
@@ -28,6 +28,16 @@ export async function createCharacter(formData: FormData) {
 
   await prisma.character.create({
     data: { name },
+  });
+
+  revalidatePath("/");
+}
+
+export async function deleteCharacter(formData: FormData) {
+  const id = formData.get("id") as string;
+
+  await prisma.character.delete({
+    where: { id },
   });
 
   revalidatePath("/");
