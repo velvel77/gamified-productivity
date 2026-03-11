@@ -22,3 +22,13 @@ export async function deleteTask(formData: FormData) {
 
   revalidatePath("/");
 }
+
+export async function createCharacter(formData: FormData) {
+  await prisma.character.create({
+    data: {
+      name: formData.get("name") as string,
+    },
+  });
+
+  revalidatePath("/");
+}
