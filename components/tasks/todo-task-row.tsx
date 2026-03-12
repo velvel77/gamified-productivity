@@ -25,7 +25,7 @@ export default function TodoTaskRow({ task }: TodoTaskProps) {
         </button>
       </form>
 
-      <span>
+      <span className="text-pink-600 mt-0.5 font-semibold min-w-0 wrap-break-word">
         {task.title}
       </span>
 
