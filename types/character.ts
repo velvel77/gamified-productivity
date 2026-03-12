@@ -4,5 +4,5 @@ export type Character = {
     level: number
     exp: number
     health: number
-    isNewlyRevived: boolean
+    is_newly_revived: boolean
 }

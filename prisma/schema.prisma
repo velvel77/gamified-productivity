@@ -16,6 +16,7 @@ datasource db {
 model Task {
   id String @id @default(cuid())
   title String
+  is_done Boolean @default(false)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
@@ -26,7 +27,7 @@ model Character {
   level Int @default(1)
   exp Int @default(0)
   health Int @default(3)
-  isNewlyRevived Boolean @default(false)
+  is_newly_revived Boolean @default(false)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
