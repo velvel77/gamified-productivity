@@ -14,9 +14,9 @@ export default function CreateCharacterForm() {
                 placeholder="New character"
                 className="max-w-3/5 bg-white px-3 py-1 rounded" />
                 <button
-                className="bg-white"
+                className="bg-white px-3 py-1 text-black rounded-lg"
                 type="submit">
-                    Create Character
+                    Create
                 </button>
             </form>
         </div>
