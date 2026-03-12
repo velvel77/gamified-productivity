@@ -1,4 +1,4 @@
-import { Trash2 } from "lucide-react";
+import { BadgeCheck, Circle, Hourglass, Trash2 } from "lucide-react";
 import { deleteTask } from "@/actions/actions";
 import type { Task } from "@/types/task";
 
