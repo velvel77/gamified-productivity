@@ -1,4 +1,4 @@
-import { BadgeCheck, Circle, Hourglass, Trash2 } from "lucide-react";
+import { BadgeCheck, Circle, Clock, Trash2 } from "lucide-react";
 import { deleteTask, toggleTask } from "@/actions/actions";
 import type { Task } from "@/types/task";
 
@@ -8,7 +8,7 @@ type TodoTaskProps = {
 
 export default function TodoTaskRow({ task }: TodoTaskProps) {
   return (
-    <li className="grid grid-cols-[auto_1fr_auto] items-center" key={task.id}>
+    <li className="grid grid-cols-[auto_1fr_auto_auto] items-center" key={task.id}>
 
       <form action={toggleTask} className="flex align-center mr-2">
       <input type="hidden" name="id" value={task.id} />
@@ -25,9 +25,14 @@ export default function TodoTaskRow({ task }: TodoTaskProps) {
         </button>
       </form>
 
-      <span className="text-pink-600 mt-0.5 font-semibold min-w-0 wrap-break-word">
+      <span 
+      className={`text-pink-600 mt-0.5 font-semibold min-w-0 wrap-break-word ${
+        task.is_done && "line-through"
+      }`}>
         {task.title}
       </span>
+
+      <Clock className="text-pink-500" />
 
       <form action={deleteTask} className="">
         <input type="hidden" name="id" value={task.id} />
