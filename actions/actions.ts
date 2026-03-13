@@ -3,6 +3,8 @@
 import { revalidatePath } from "next/cache";
 import prisma from "@/lib/db";
 
+// --- Task actions ---
+
 export async function addTask(formData: FormData) {
   const title = formData.get("title") as string;
 
@@ -40,6 +42,8 @@ export async function toggleTask(formData: FormData) {
   revalidatePath("/");
 }
 
+// --- Character actions ---
+
 export async function createCharacter(formData: FormData) {
   const name = formData.get("name") as string;
 
@@ -58,4 +62,28 @@ export async function deleteCharacter(formData: FormData) {
   });
 
   revalidatePath("/");
+}
+
+export async function increaseExp(formData: FormData) {
+  const id = formData.get("id") as string;
+
+  const character = await prisma.character.findUniqueOrThrow ({
+    where: { id }
+  })
+
+  const currentLevel = character.level
+  const thresholdForNextLevel = await prisma.levelThreshold.findUniqueOrThrow({
+    where: { level: currentLevel + 1 }
+  })
+
+  await prisma.character.update({
+    where: { id },
+    data: {
+      exp: { increment: 10 }
+    }
+  })
+}
+
+export async function reduceExp(formData: FormData) {
+  
 }
