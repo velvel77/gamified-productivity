@@ -1,5 +1,12 @@
 # 📝 En spelifierad produktivitetsapp via Next.js, Docker och Prisma
 
+![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![MIT License](https://img.shields.io/badge/License-MIT-green)
+
 En produktivitetsapp där du blir starkare genom att klara av dina vardagssysslor. Här erbjuds en stilren hemsida för mobilen byggd med **Next.js 16**, **Docker 29.2.1** och **Prisma 7.4.2**. 
 Projektet låter dig skapa en "att göra"-lista som du bockar av för att få belöningar och bli starkare.
 
