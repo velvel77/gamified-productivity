@@ -1,5 +1,12 @@
 # 📝 En spelifierad produktivitetsapp via Next.js, Docker och Prisma
 
+![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![MIT License](https://img.shields.io/badge/License-MIT-green)
+
 En produktivitetsapp där du blir starkare genom att klara av dina vardagssysslor. Här erbjuds en stilren hemsida för mobilen byggd med **Next.js 16**, **Docker 29.2.1** och **Prisma 7.4.2**. 
 Projektet låter dig skapa en "att göra"-lista som du bockar av för att få belöningar och bli starkare.
 
@@ -192,7 +199,7 @@ npx prisma studio
 Vill du bidra?
 
 1. Forka projektet
-2. Skapa en feature-branch (`git checkout ......`)
+2. Skapa en feature-branch (`git checkout feature/my-feature`)
 3. Commit & push
 4. Skicka en Pull Request
 
@@ -211,10 +218,16 @@ Vill du bidra?
 
 ## 📜 Licens
 
-Detta projekt är utvecklat i utbildningssyfte och är inte avsett för produktion.
+Copyright 2026 Velvet Paul
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ---
 
 ## ✍️ Kontakt
 
-velvet.paul91@gmail.com
+https://www.linkedin.com/in/velvetpaul/
