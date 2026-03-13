@@ -192,7 +192,7 @@ npx prisma studio
 Vill du bidra?
 
 1. Forka projektet
-2. Skapa en feature-branch (`git checkout ......`)
+2. Skapa en feature-branch (`git checkout feature/my-feature`)
 3. Commit & push
 4. Skicka en Pull Request
 
@@ -211,10 +211,16 @@ Vill du bidra?
 
 ## 📜 Licens
 
-Detta projekt är utvecklat i utbildningssyfte och är inte avsett för produktion.
+Copyright 2026 Velvet Paul
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ---
 
 ## ✍️ Kontakt
 
-velvet.paul91@gmail.com
+https://www.linkedin.com/in/velvetpaul/
