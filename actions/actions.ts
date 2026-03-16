@@ -108,3 +108,11 @@ async function tryLevelUp(id: string, exp: number) {
 }
 
 export async function reduceExp(formData: FormData) {}
+
+export async function getNextExpThreshold(level: number): Promise<number> {
+  const levelThreshold = await prisma.levelThreshold.findUniqueOrThrow({
+    where: { level: level + 1 },
+  });
+
+  return levelThreshold.exp;
+}
