@@ -18,6 +18,7 @@ Detta projekt är under ständig utveckling via ett **Agile Scrum** ramverk, dä
 - 📖 [Om projektet](#-om-projektet)
 - ✨ [Funktioner](#-funktioner)
 - 🛠 [Teknologier](#-teknologier)
+- 📸 [UI](#-UI)
 - ⚙️ [Installation](#-installation)
 - 🚀 [Användning](#-användning)
 - 📂 [Projektstruktur](#-projektstruktur)
@@ -27,7 +28,6 @@ Detta projekt är under ständig utveckling via ett **Agile Scrum** ramverk, dä
 - 📚 [Lärdomar](#-lärdomar)
 - 📜 [Licens](#-licens)
 - ✍️ [Kontakt](#-kontakt)
-
 
 ---
 
@@ -42,6 +42,19 @@ Detta är ett soloprojekt med syfte att öva på att **utveckla ett fullstack-ra
 - ✅ Lägg och ta bort uppgifter
 - ✅ Boka av färdiga uppgifter
 - ✅ Skapa din karaktär
+
+---
+
+## 📸 UI
+
+**Wireframe:**
+
+
+<img src="app/Image/Wireframe.png" width="200">
+
+**App:**
+
+<img src="app/Image/Homepage.png" width="300">
 
 ---
 
