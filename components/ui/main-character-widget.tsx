@@ -1,4 +1,4 @@
-import { deleteCharacter } from "@/actions/actions";
+import { deleteCharacter, getNextExpThreshold } from "@/actions/actions";
 import type { Character } from "@/types/character";
 import CreateCharacterForm from "../character/create-character-form";
 
@@ -24,7 +24,7 @@ export default function MainCharacterWidget({ character }: CharacterProps) {
         <section className="flex flex-col justify-center items-center">
             <div className="flex gap-4">
                 <span className="text-white">Lv: {character.level}</span>
-                <span className="text-white">Exp: {character.exp}/50</span>
+                <span className="text-white">Exp: {character.exp}/{getNextExpThreshold(character.level)}</span>
             </div>
             <span className="text-white">Health: {character.health}</span>
         </section>
