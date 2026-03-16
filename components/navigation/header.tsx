@@ -5,7 +5,7 @@ export default function Header() {
                 <span className="font-bold text-white wrap-break-word">Kill the Task!</span>
             </div>
 
-            <section className="flex items-center justify-center bg-white p-3 pt-2 rounded-xl">
+            <section className="flex items-center justify-center bg-white p-3 rounded-xl">
                 <span>Tasks</span>
             </section>
       </header>

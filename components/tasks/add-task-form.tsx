@@ -14,7 +14,7 @@ export default function AddTaskForm() {
             placeholder="New title"
             className="bg-white px-3 py-1 rounded" />
             <button 
-            className="bg-background px-3 py-2 pt-0.5 text-black rounded-lg"
+            className="bg-background px-3 py-2 text-black rounded-lg"
             type="submit">
               Add task
             </button>
