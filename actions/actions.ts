@@ -32,12 +32,18 @@ export async function toggleTask(formData: FormData) {
     where: { id },
   });
 
+  const newStatus = !task.is_done;
+
   await prisma.task.update({
     where: { id },
     data: {
-      is_done: !task?.is_done,
+      is_done: newStatus,
     },
   });
+
+  if (!task.is_done && newStatus) {
+    await increaseExp();
+  }
 
   revalidatePath("/");
 }
@@ -64,26 +70,41 @@ export async function deleteCharacter(formData: FormData) {
   revalidatePath("/");
 }
 
-export async function increaseExp(formData: FormData) {
-  const id = formData.get("id") as string;
+//helper functions
 
-  const character = await prisma.character.findUniqueOrThrow ({
-    where: { id }
-  })
+async function increaseExp() {
+  const character = await prisma.character.findFirstOrThrow();
 
-  const currentLevel = character.level
-  const thresholdForNextLevel = await prisma.levelThreshold.findUniqueOrThrow({
-    where: { level: currentLevel + 1 }
-  })
+  const currentExp = character.exp + 10;
 
   await prisma.character.update({
-    where: { id },
+    where: { id: character.id },
     data: {
-      exp: { increment: 10 }
-    }
-  })
+      exp: { increment: 10 },
+    },
+  });
+
+  await tryLevelUp(character.id, currentExp);
 }
 
-export async function reduceExp(formData: FormData) {
-  
+async function tryLevelUp(id: string, exp: number) {
+  const character = await prisma.character.findUniqueOrThrow({
+    where: { id },
+  });
+
+  const thresholdForNextLevel = await prisma.levelThreshold.findUniqueOrThrow({
+    where: { level: character.level + 1 },
+  });
+
+  if (exp >= thresholdForNextLevel.exp) {
+    await prisma.character.update({
+      where: { id },
+      data: {
+        level: { increment: 1 },
+        exp: 0,
+      },
+    });
+  }
 }
+
+export async function reduceExp(formData: FormData) {}

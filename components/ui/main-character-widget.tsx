@@ -28,6 +28,7 @@ export default function MainCharacterWidget({ character }: CharacterProps) {
             </div>
             <span className="text-white">Health: {character.health}</span>
         </section>
+
         <div>
             <form action={deleteCharacter}>
                 <input type="hidden" name="id" value={character.id} />

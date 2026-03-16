@@ -28,7 +28,7 @@ export default function TodoTaskRow({ task }: TodoTaskProps) {
       </form>
 
       <span
-        className={`mt-0.5 font-semibold min-w-0 wrap-break-word ${
+        className={`mb-0.5 font-semibold min-w-0 wrap-break-word ${
           task.is_done ? "text-gray-500 line-through" : "text-pink-600"
         }`}
       >
